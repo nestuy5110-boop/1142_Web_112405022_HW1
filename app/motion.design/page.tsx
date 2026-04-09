@@ -43,7 +43,7 @@ export default function MotionDesignPage() {
           </h1>
         {/* 介紹文字 */}
         <p className="text-base md:text-lg leading-relaxed text-[#6c584c]">
-          歡迎123
+        讓靜態視覺設計在時間軸上躍動，掌控動態的位移與節奏，將視覺衝擊力轉化為更具渲染力的感官體驗。
         </p>
 
       </div>

@@ -46,7 +46,7 @@ export default function AboutMePage() {
             <div>
               <h1 className="text-4xl font-bold text-[#472c1b] mb-6">ABOUT.ME</h1>
               <p className="text-lg leading-relaxed text-[#6c584c]">
-                嗨！我是昱岑。123
+                您好！我是林昱岑，目前就讀於政治大學的廣告學系三年級。雖然就讀的是傳播設計組，但我自認並非是純粹的視覺設計者，更是一位具備視覺武器的創意策劃人。
               </p>
             </div>
 
@@ -58,10 +58,11 @@ export default function AboutMePage() {
               </h2>
               <div className="space-y-6">
                 {[
-                  { label: "1細節強迫症 (Detail Oriented)", value: "95%" },
-                  { label: "2跨領域好奇心 (Curiosity)", value: "85%" },
-                  { label: "22深夜創意家 (Night Owl)", value: "90%" },
-                  { label: "222完美主義 (Perfectionist)", value: "80%" }
+                  { label: "跨領域學習與好奇心", value: "90%" },
+                  { label: "活潑開朗積極主動", value: "85%" },
+                  { label: "創意腦筋急轉彎", value: "70%" },
+                  { label: "音樂狂熱愛好者", value: "90%" },
+                  { label: "皮克敏資深玩家（尚未", value: "20%" }
                 ].map((stat) => (
                   <div key={stat.label}>
                     <div className="flex justify-between items-end mb-1.5">
@@ -156,8 +157,9 @@ export default function AboutMePage() {
             <div className="space-y-6">
               {[
                 { title: "JLPT N3 日本語能力試驗", progress: "60%" },
-                { title: "Next.js 網頁開發實作", progress: "20%" },
-                { title: "3D Blender 建模基礎", progress: "25%" }
+                { title: "Next.js 網頁開發實作", progress: "10%" },
+                { title: "軟體熟練運用", progress: "65%" },
+                { title: "臺北美食探索完成度", progress: "25%" }
               ].map((item) => (
                 <div key={item.title}>
                   <div className="flex justify-between items-end mb-2">

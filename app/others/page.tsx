@@ -51,7 +51,7 @@ export default function OthersPage() {
           </h1>
         {/* 介紹文字 */}
         <p className="text-base md:text-lg leading-relaxed text-[#6c584c]">
-          歡迎456
+        不設限的創意實驗室，紀錄我在不同領域跨界探索中的靈光乍現。
         </p>
 
       </div>

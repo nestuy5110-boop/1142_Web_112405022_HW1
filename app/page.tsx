@@ -21,7 +21,7 @@ export default function Home() {
       {/* 進入按鈕 */}
       <Link href="/about">
         <button className="group relative px-12 py-4 bg-[#7f5539] text-white rounded-full font-bold overflow-hidden transition-all hover:shadow-[0_0_20px_rgba(127,85,57,0.4)]">
-          <span className="relative z-10">EXPLORE.</span>
+          <span className="relative z-10">CLICK TO EXPLORE.</span>
           <div className="absolute inset-0 bg-[#472c1b] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
         </button>
       </Link>

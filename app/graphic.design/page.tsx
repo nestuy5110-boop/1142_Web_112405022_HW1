@@ -66,7 +66,7 @@ export default function GraphicDesignPage() {
           </h1>
         {/* 介紹文字 */}
         <p className="text-base md:text-lg leading-relaxed text-[#6c584c]">
-          歡迎123
+        運用視覺轉化與編排，將瑣碎的資訊轉化，探索色彩與線條的無限可能性。
         </p>
 
       </div>

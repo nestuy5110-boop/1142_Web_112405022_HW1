@@ -32,74 +32,70 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="bg-gray-100">
-        <div className="flex min-h-screen items-stretch gap-4 p-4">
-          {/* 左側：滿版高度，不需要捲動 */}
-          <aside className="bg-[#e6ccb2] w-[320px] h-[calc(100vh-2rem)] rounded-3xl p-10 shadow-md shrink-0">
-            <div className="flex justify-center items-center w-full">
-              <div className="bg-gray-200 w-[100px] h-[100px] rounded-full overflow-hidden">
-                <Image src="/ME.JPG" alt="pii" width={100} height={100} />
+        {/* 手機版改為 flex-col (垂直)，桌面版 md: 以上改為 flex-row (橫向) */}
+        <div className="flex flex-col md:flex-row min-h-screen items-stretch gap-4 p-4">
+          
+          {/* 左側側邊欄：手機版寬度 100%，桌面版固定 320px */}
+          {/* 左側側邊欄/上方導覽列：我們加上 w-full 與 overflow-hidden 來強制圓角內的內容不溢出 */}
+          <aside className="bg-[#e6ccb2] w-full md:w-[320px] md:h-[calc(100vh-2rem)] rounded-3xl p-6 md:p-10 shadow-md shrink-0 flex flex-col items-center overflow-y-auto overflow-x-hidden custom-scrollbar">
+            <div className="flex flex-col items-center w-full min-h-fit">
+              {/* 大頭貼 */}
+              <div className="bg-gray-200 w-[100px] h-[100px] rounded-full overflow-hidden shrink-0">
+                <Image 
+                  src="/ME.JPG" 
+                  alt="pii" 
+                  width={100} 
+                  height={100} 
+                  className="w-full h-full object-cover"
+                />
               </div>
+
+              {/* 文字介紹 */}
+              <div className="mt-5 space-y-3 w-full text-center shrink-0">
+                <div className="font-bold text-lg text-[#472c1b]">林昱岑 YuTsen Lin</div>
+                <div className="text-sm text-[#b08968] mt-1">平面設計   ｜   動態設計   ｜   活動策劃</div>
+                <div className="text-sm text-[#472c1b] mt-1 whitespace-nowrap">用生命與睡眠換來的作品孩子們c:</div>
+              </div>
+
+              {/* 社群按鈕 */}
+              <div className="flex justify-center gap-4 mt-5 shrink-0">
+                <a href="https://www.instagram.com/seirrehc015/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors flex items-center justify-center shadow-sm">
+                  <FaInstagram size={20} />
+                </a>
+                <a href="https://www.facebook.com/lin.yu.cen.820127" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors flex items-center justify-center shadow-sm">
+                  <FaFacebook size={20} />
+                </a>
+                <a href="https://drive.google.com/file/d/1mNrYekuo_jeRymVf1zk6TraqoJOM9PL0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors flex items-center justify-center shadow-sm">
+                  <FaGoogleDrive size={20} />
+                </a>
+              </div>
+
+              {/* 導覽按鈕：恢復獨立長圓形設計 */}
+              <nav className="mt-10 flex flex-col gap-4 w-full mb-4">
+                {[
+                  { name: "ABOUT.ME", href: "/about" },
+                  { name: "GRAPHIC.DESIGN", href: "/graphic.design" },
+                  { name: "MOTION.DESIGN", href: "/motion.design" },
+                  { name: "OTHERs.", href: "/others" },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="flex items-center justify-center bg-white/90 py-4 md:py-6 rounded-full hover:bg-[#7f5539] hover:text-white/90 transition-colors shadow-sm w-full"
+                  >
+                    <span className="text-sm md:text-base font-semibold px-4 text-center">
+                      {item.name}
+                    </span>
+                  </Link>
+                ))}
+              </nav>
             </div>
-
-          <div className="mt-5 space-y-3">
-            <div className="text-center mt-4 font-bold text-lg text-[#472c1b]">林昱岑 YuTsen Lin</div>
-            <div className="text-center text-sm text-[#b08968] mt-1">平面設計   ｜   動態設計   ｜   活動策劃</div>
-            <div className="text-center text-sm text-[#472c1b] mt-1">歡迎蒞臨我的瘋狂世界c:</div>
-
-          </div>
-            
-
-            {/* 三個可點擊社群圓鈕：置中、hover 變色、外部連結 */}
-            <div className="flex justify-center gap-4 mt-5">
-              <a
-                href="https://www.instagram.com/seirrehc015/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-12 h-12 rounded-full bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors duration-200 flex items-center justify-center shadow-sm"
-              >
-                <FaInstagram size={20} />
-              </a>
-              <a
-                href="https://www.facebook.com/lin.yu.cen.820127"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="w-12 h-12 rounded-full bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors duration-200 flex items-center justify-center shadow-sm"
-              >
-                <FaFacebook size={20} />
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1mNrYekuo_jeRymVf1zk6TraqoJOM9PL0/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-12 h-12 rounded-full  bg-white/90 text-[#7f5539] hover:bg-[#7f5539] hover:text-white/90 transition-colors duration-200 flex items-center justify-center shadow-sm"
-              >
-                <FaGoogleDrive size={20} />
-              </a>
-            </div>
-
-            <nav className="mt-10 space-y-5">
-              <Link href="/about" className="block bg-white/90 p-6 rounded-full hover:bg-[#7f5539] hover:text-white/90 transition-colors">
-                ABOUT.ME
-              </Link>
-              <Link href="/graphic.design" className="block bg-white/90 p-6 rounded-full hover:bg-[#7f5539] hover:text-white/90 transition-colors">
-                GRAPHIC.DESIGN
-              </Link>
-              <Link href="/motion.design" className="block bg-white/90 p-6 rounded-full hover:bg-[#7f5539] hover:text-white/90 transition-colors">
-                MOTION.DESIGN
-              </Link>
-              <Link href="/others" className="block bg-white/90 p-6 rounded-full hover:bg-[#7f5539] hover:text-white/90 transition-colors">
-                OTHERs.
-              </Link>
-            </nav>
           </aside>
 
-          {/* 右邊內容區 */}
-            <main className="bg-transparent rounded-3xl w-full h-[calc(100vh-2rem)] overflow-y-auto">
-              {children}
-            </main>
+          {/* 右側內容區 */}
+          <main className="bg-transparent rounded-3xl w-full md:h-[calc(100vh-2rem)] overflow-y-auto">
+            {children}
+          </main>
         </div>
       </body>
     </html>
