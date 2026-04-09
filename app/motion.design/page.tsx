@@ -16,7 +16,7 @@ const projects = [
     description: "隨著音樂與歌詞的起伏，將歌曲中的資訊進行拆解，同步歌詞將元素視覺化，提升感官體驗。",
     tags: ["#音樂動畫MV", "#圖文敘事", "#After Effect"],
     imageUrl: "/bug.png",
-    url:"https://drive.google.com/file/d/1DWWDebyNq93iHvMjBkRc5ChZnv7RkmxB/view?usp=drive_link"
+    url:"https://drive.google.com/file/d/1jBzvVie1jL49dcjHu2TVOR4_CwalyTKn/view?usp=drive_link"
   },
   {
     id: 3,
