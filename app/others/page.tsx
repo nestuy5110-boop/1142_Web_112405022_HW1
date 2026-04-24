@@ -34,6 +34,22 @@ const projects = [
     imageUrl: "/contest.png",
     url:"https://drive.google.com/file/d/1YRWavFGgAHCAHxd2jxHtvA8vvimla-jL/view?usp=drive_link"
   },
+  {
+    id: 5,
+    title: "112年度麥高芬劇團夏季公演《寂寞芳心俱樂部》｜舞台組 ",
+    description: "透過道具的堆疊，在空白的舞台上編織人情味，彷彿真有人棲居其間的真實場景。",
+    tags: ["#劇場工作", "#手工木工", "#團隊合作"],
+    imageUrl: "/jifan.JPG",
+    url:"https://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+  },
+  {
+    id: 6,
+    title: "113年度麥高芬劇團冬季公演《可以睡覺》｜宣傳組",
+    description: "負責線上宣傳企劃，轉譯舞台上的創作語言，讓故事在社群發酵，精準傳達劇作精神給目標受眾。",
+    tags: ["#劇場工作", "#社群宣傳", "#團隊合作"],
+    imageUrl: "/contest.png",
+    url:"hhttps://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+  },
   
 ];
 // ============================

@@ -151,7 +151,7 @@ export default function AboutMePage() {
           <div className="flex-1">
             <h2 className="text-sm font-bold text-[#b08968] uppercase tracking-widest mb-8 flex items-center">
               <span className="w-2 h-2 bg-[#b08968] rounded-full mr-2"></span>
-              IN.PROGRESS
+              
             </h2>
             
             <div className="space-y-6">
