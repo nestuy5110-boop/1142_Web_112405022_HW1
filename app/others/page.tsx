@@ -47,7 +47,7 @@ const projects = [
     title: "113年度麥高芬劇團冬季公演《可以睡覺》｜宣傳組",
     description: "負責線上宣傳企劃，轉譯舞台上的創作語言，讓故事在社群發酵，精準傳達劇作精神給目標受眾。",
     tags: ["#劇場工作", "#社群宣傳", "#團隊合作"],
-    imageUrl: "/contest.png",
+    imageUrl: "/sleep.JPEG",
     url:"hhttps://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   },
   
