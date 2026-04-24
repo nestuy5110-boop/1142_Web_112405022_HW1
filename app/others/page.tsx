@@ -20,14 +20,23 @@ const projects = [
   },
   {
     id: 3,
-    title: "《插座神偷》App Demo",
-    description: "設計、模擬真實的使用者路徑，也透過Framer架設了一個虛構網站用以傳達我們製作的內容與初衷。",
-    tags: ["#UIUX", "#使用者路徑", "#網站架設"],
-    imageUrl: "/thief.png",
-    url:"https://sockethief.framer.website/#hero"
+    title: "112年度麥高芬劇團《寂寞芳心俱樂部》｜舞台 ",
+    description: "透過道具的堆疊，在空白的舞台上編織人情味，彷彿真有人棲居其間的真實場景。",
+    tags: ["#劇場工作", "#手工木工", "#團隊合作"],
+    imageUrl: "/jifan.JPG",
+    url:"https://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   },
+  
   {
     id: 4,
+    title: "113年度麥高芬劇團《可以睡覺》｜宣傳",
+    description: "負責線上宣傳企劃，轉譯舞台上的創作語言，讓故事在社群發酵，精準傳達劇作精神給目標受眾。",
+    tags: ["#劇場工作", "#社群宣傳", "#團隊合作"],
+    imageUrl: "/sleep.JPEG",
+    url:"hhttps://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+  },
+  {
+    id: 5,
     title: "2025全國Future Young Lions｜優選 ",
     description: "小組針對「肥胖是一種疾病」展開了無數次的發散與聚攏思考，最終取得比賽優勝。",
     tags: ["#競賽", "#創意發想", "#團隊合作"],
@@ -35,21 +44,15 @@ const projects = [
     url:"https://drive.google.com/file/d/1YRWavFGgAHCAHxd2jxHtvA8vvimla-jL/view?usp=drive_link"
   },
   {
-    id: 5,
-    title: "112年度麥高芬劇團夏季公演《寂寞芳心俱樂部》｜舞台組 ",
-    description: "透過道具的堆疊，在空白的舞台上編織人情味，彷彿真有人棲居其間的真實場景。",
-    tags: ["#劇場工作", "#手工木工", "#團隊合作"],
-    imageUrl: "/jifan.JPG",
-    url:"https://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-  },
-  {
     id: 6,
-    title: "113年度麥高芬劇團冬季公演《可以睡覺》｜宣傳組",
-    description: "負責線上宣傳企劃，轉譯舞台上的創作語言，讓故事在社群發酵，精準傳達劇作精神給目標受眾。",
-    tags: ["#劇場工作", "#社群宣傳", "#團隊合作"],
-    imageUrl: "/sleep.JPEG",
-    url:"hhttps://www.instagram.com/nccu_theater?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    title: "《插座神偷》App Demo",
+    description: "設計、模擬真實的使用者路徑，也透過Framer架設了一個虛構網站用以傳達我們製作的內容與初衷。",
+    tags: ["#UIUX", "#使用者路徑", "#網站架設"],
+    imageUrl: "/thief.png",
+    url:"https://sockethief.framer.website/#hero"
   },
+  
+  
   
 ];
 // ============================
