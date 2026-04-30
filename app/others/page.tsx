@@ -70,7 +70,7 @@ export default function OthersPage() {
           </h1>
         {/* 介紹文字 */}
         <p className="text-base md:text-lg leading-relaxed text-[#6c584c]">
-        不設限的創意實驗室，紀錄我在不同領域跨界探索中的靈光乍現。
+        不設限的創意實驗室。（譯：很多神奇又古怪的技能和活動經驗）
         </p>
 
       </div>
